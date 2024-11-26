@@ -1,0 +1,121 @@
+p {
+    font-size: 14px;
+}
+    
+.teacherPage {
+    padding: 20px;
+    position: relative;
+}
+
+.teacherPage .top {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.teacherPage .top .filter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 2px 5px;
+}
+
+.teacherPage .top .filter input {
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.teacherPage .top .act {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.teacherPage .top .act:hover {
+    opacity: 0.5;
+}
+
+.teacherPage .content .title {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #f4f1ff;
+    padding: 10px 0;
+}
+.teacherPage .content .title .titleCode { grid-area: 1 / 1 / 2 / 2; padding-left: 5px;}
+.teacherPage .content .title .titleTeacherInfo { grid-area: 1 / 2 / 2 / 4; }
+.teacherPage .content .title .titleDegree { grid-area: 1 / 4 / 2 / 6; }
+.teacherPage .content .title .titleSubject { grid-area: 1 / 6 / 2 / 7; }
+.teacherPage .content .title .titlePositions { grid-area: 1 / 7 / 2 / 8; }
+.teacherPage .content .title .titleAddress { grid-area: 1 / 8 / 2 / 9; }
+.teacherPage .content .title .titleIsActive { grid-area: 1 / 9 / 2 / 10; }
+.teacherPage .content .title .titleAct { grid-area: 1 / 10 / 2 / 11; display: flex; justify-content: end; padding-right: 10px;}
+
+.teacherPage .content .listTeacher .teacher {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    align-items: center;
+}
+.teacherPage .content .listTeacher .teacher .code { grid-area: 1 / 1 / 2 / 2; padding-left: 5px;}
+.teacherPage .content .listTeacher .teacher .teacherInfo { grid-area: 1 / 2 / 2 / 4; }
+.teacherPage .content .listTeacher .teacher .degree { grid-area: 1 / 4 / 2 / 6; }
+.teacherPage .content .listTeacher .teacher .subject { grid-area: 1 / 6 / 2 / 7; }
+.teacherPage .content .listTeacher .teacher .positions { grid-area: 1 / 7 / 2 / 8; }
+.teacherPage .content .listTeacher .teacher .address { grid-area: 1 / 8 / 2 / 9; }
+.teacherPage .content .listTeacher .teacher .isActive { grid-area: 1 / 9 / 2 / 10; }
+.teacherPage .content .listTeacher .teacher .act { grid-area: 1 / 10 / 2 / 11; }
+
+.teacherPage .content .listTeacher .teacher .teacherInfo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.teacherPage .content .listTeacher .teacher .teacherInfo .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.teacherPage .content .listTeacher .teacher .act {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.teacherPage .content .listTeacher .teacher .act div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.teacherPage .content .listTeacher .teacher .act div p {
+    font-size: 12px;
+}
+
+.teacherPage .content .listTeacher .teacher:hover {
+    cursor: pointer;
+    background-color: #f4f1ff;
+}
+
+.teacherPage:has(.createTeacherPage) {
+    height: 100vh;
+    overflow-y: hidden;
+}

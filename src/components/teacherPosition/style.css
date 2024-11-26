@@ -1,0 +1,86 @@
+p {
+    font-size: 14px;
+}
+
+.teacherPositionPage {
+    padding: 20px;
+    position: relative;
+}
+
+.teacherPositionPage .top {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.teacherPositionPage .top .act {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.teacherPositionPage .top .act:hover {
+    opacity: 0.5;
+}
+
+.teacherPositionPage .content .title {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #f4f1ff;
+    padding: 10px 0;
+
+}
+.teacherPositionPage .content .title .titleSTT { grid-area: 1 / 1 / 2 / 2; padding-left: 5px;}
+.teacherPositionPage .content .title .titleCode { grid-area: 1 / 2 / 2 / 3; }
+.teacherPositionPage .content .title .titleName { grid-area: 1 / 3 / 2 / 5; }
+.teacherPositionPage .content .title .titleIsActive { grid-area: 1 / 5 / 2 / 7; }
+.teacherPositionPage .content .title .titleDes { grid-area: 1 / 7 / 2 / 10; }
+.teacherPositionPage .content .title .titleSetting { grid-area: 1 / 10 / 2 / 11; }
+
+.teacherPositionPage .content .listPosition .position {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.teacherPositionPage .content .listPosition .position .STT { grid-area: 1 / 1 / 2 / 2; padding-left: 5px;}
+.teacherPositionPage .content .listPosition .position .code { grid-area: 1 / 2 / 2 / 3; }
+.teacherPositionPage .content .listPosition .position .name { grid-area: 1 / 3 / 2 / 5; }
+.teacherPositionPage .content .listPosition .position .isActive { grid-area: 1 / 5 / 2 / 7; }
+.teacherPositionPage .content .listPosition .position .des { grid-area: 1 / 7 / 2 / 10; }
+.teacherPositionPage .content .listPosition .position .setting { grid-area: 1 / 10 / 2 / 11; display: flex; justify-content: end; padding-right: 10px;}
+
+.true {
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    background-color: #51c41a;
+    padding: 2px 5px 3px;
+    border-radius: 5px;
+}
+
+.false {
+    font-size: 12px;
+    width: fit-content;
+    color: #fff;
+    background-color: #4f46e6;
+    padding: 2px 5px 3px;
+    border-radius: 5px;
+}
+
+.teacherPositionPage .content .listPosition .position:hover {
+    cursor: pointer;
+    background-color: #f4f1ff;
+}

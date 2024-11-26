@@ -1,0 +1,164 @@
+.createTeacherPage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(53, 53, 53, 0.345);
+}
+
+.createTeacherPage .content {
+    min-height: 100vh;
+    width: 900px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+.createTeacherPage .content .back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #AAAAAA80;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo img {
+    width: 150px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #d7d6fa;
+    margin-left: 20px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo h5 {
+    width: fit-content;
+    padding: 0 10px;
+    background-color: #fff;
+    position: relative;
+    left: 50px;
+    bottom: 9px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo .info .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo .info .row label {
+    font-size: 14px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grPersonalInfo .personalInfo .info .row input {
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grWorkInfo {
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1px solid #d7d6fa;
+}
+
+.createTeacherPage .content .formCreateTeacher .grWorkInfo h5 {
+    width: fit-content;
+    padding: 0 10px;
+    background-color: #fff;
+    position: relative;
+    left: 50px;
+    bottom: 9px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grWorkInfo select {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grDegree {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1px solid #d7d6fa;
+    position: relative;
+}
+
+.createTeacherPage .content .formCreateTeacher .grDegree h5 {
+    width: fit-content;
+    padding: 0 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 50px;
+    top: -8px;
+}
+
+.createTeacherPage .content .formCreateTeacher .grDegree button {
+    width: fit-content;
+    text-align: end;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.createTeacherPage .content .formCreateTeacher .grDegree .title {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.titleType { grid-area: 1 / 1 / 2 / 3; padding-left: 5px;}
+.titleSchool { grid-area: 1 / 3 / 2 / 6; }
+.titleMajor { grid-area: 1 / 6 / 2 / 8; }
+.titleIsGraduated { grid-area: 1 / 8 / 2 / 10; }
+.titleYear { grid-area: 1 / 10 / 2 / 11; }
+.titleDelete { grid-area: 1 / 11 / 2 / 12; }
+
+.createTeacherPage .content .formCreateTeacher .buttonSubmit {
+    display: flex;
+    justify-content: end;
+}
+
+.createTeacherPage .content .formCreateTeacher .buttonSubmit button {
+    width: fit-content;
+    text-align: end;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
